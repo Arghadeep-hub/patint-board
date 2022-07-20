@@ -1,0 +1,146 @@
+.home {
+  background-color: #f5f5f5;
+  height: 88vh;
+  padding: 0 0.5rem 0 1rem;
+  width: 100vw;
+  position: relative;
+  top: 12vh;
+  left: 5%;
+}
+
+.dashboard {
+  overflow: auto;
+  height: inherit;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.dashboard .heading {
+  width: 100%;
+  margin: 1rem 0 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: auto;
+}
+.dashboard .heading :is(h6, p) {
+  margin: 0;
+}
+.dashboard .heading p {
+  font-size: 16px;
+  color: #9a9a9a;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.dashboard .heading p span {
+  color: #8085e9;
+}
+.event {
+  width: 1359px;
+  height: 74px;
+  background-color: #fff;
+  box-shadow: 0px 15px 30px rgba(173, 206, 255, 0.13);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 0 10px;
+}
+.eventType {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+}
+
+:is(.graphDiv, .sideButtons) {
+  height: 350px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06);
+}
+.graphDiv {
+  margin: 10px 0;
+  padding: 20px;
+  width: 92%;
+}
+
+.graphDiv .topGraph {
+  display: flex;
+  justify-content: space-between;
+}
+.graphDiv .topGraph .topLeftGraph {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 1rem;
+}
+
+.sideButtons {
+  margin: 10px 0px 10px 20px;
+  padding: 10px;
+  width: 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.inputSection {
+  width: 392px;
+  height: 61px;
+  margin: 5px 10px 5px 30px;
+  background: #ffffff;
+  box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left{
+  width: 60%;
+  /* border: 1px solid blue; */
+  margin: 10px 0;
+}
+.left .findItems{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.left .icons{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  margin: 10px 0 1rem 15%;
+}
+.left .findItems .finding{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.right{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.right .rightTop{
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ gap: 20px;
+}
+.right .rightBottom{
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
