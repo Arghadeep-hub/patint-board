@@ -22,15 +22,20 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-  overflow: auto;
+}
+.dashboard .heading h6{
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 .dashboard .heading :is(h6, p) {
   margin: 0;
+  font-family: 'SF Pro Display';
 }
 .dashboard .heading p {
   font-size: 16px;
   color: #9a9a9a;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 0.6px;
   text-transform: capitalize;
   cursor: pointer;
 }
@@ -39,7 +44,7 @@
 }
 .event {
   width: 1359px;
-  height: 74px;
+  height: 65px;
   background-color: #fff;
   box-shadow: 0px 15px 30px rgba(173, 206, 255, 0.13);
   border-radius: 10px;
@@ -61,7 +66,7 @@
 }
 
 :is(.graphDiv, .sideButtons) {
-  height: 350px;
+  height: 300px;
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06);
@@ -96,7 +101,7 @@
 
 .inputSection {
   width: 392px;
-  height: 61px;
+  height: 55px;
   margin: 5px 10px 5px 30px;
   background: #ffffff;
   box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06);
@@ -114,7 +119,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding: 0 0 10px 0;
 }
 .left .icons{
   display: flex;

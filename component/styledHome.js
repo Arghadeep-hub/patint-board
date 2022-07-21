@@ -14,11 +14,12 @@ export const HomeDiv = styled.div`
 `;
 export const Small = styled.h6`
   font-weight: 700;
-  font-size: 12px;
+  font-size: 13px;
   color: #383838;
   text-transform: capitalize;
   margin: 0;
   text-align: center;
+  letter-spacing: 0.5px;
   font-family: 'SF Pro Display';
   white-space: nowrap;
 `;
@@ -49,10 +50,10 @@ export const Indicator = styled.p`
 `
 export const Visible = styled(Button)`
   color: #fff;
-  padding: 0 1rem;
+  padding: 0 10px;
   background-color: #8085E9;
   width: 100%;
-  height: 50px;
+  height: 45px;
   border-radius: 10px;
   white-space: nowrap;
   text-transform: capitalize;
@@ -138,4 +139,42 @@ export const CheckBox = styled(Checkbox)`
   margin: 0;
   padding: 0;
   
+`;
+
+export const DisPlay = styled.div`
+    /* border: 2px solid #777777; */
+    width: 100%;
+    height: 220px;
+    margin: 10px 0;
+    overflow: hidden;
+`;
+
+export const GraphDisplay = styled.div`
+    position: relative;
+    border: 2px solid #777777;
+    height: 70%;
+    width: 100%;
+    overflow: auto;
+    background-image: url('/graph.png');
+    background-repeat: repeat;
+    background-position: center left;
+    background-size: fill;
+`;
+
+export const FullDisplay = styled.div`
+    border: 2px solid #777777;
+    margin: 10px 0 0 0;
+    height: 25%;
+    width: 100%;
+    background-image: url('/bottomGraph.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: fill;
+`;
+
+export const GraphIndicator = styled.div`
+    width: 224px;
+    height: 100%;
+    background: #ffdedd6b;
+    margin: 0 auto;
 `;
