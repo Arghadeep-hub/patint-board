@@ -53,6 +53,7 @@ function SelectItem({ options, width }) {
         text-align: start;
         color: ${grey[700]};
         z-index: 2;
+        font-family: 'SF Pro Display';
       
         &:hover {
           background: ${grey[100]};
@@ -95,8 +96,8 @@ function SelectItem({ options, width }) {
             z-index: 100;
             word-break: break-word;
             text-overflow: ellipsis;
-            `,
-  );
+            font-family: 'SF Pro Display';
+`);
 
   const StyledOption = styled(OptionUnstyled)(`
             list-style: none;
@@ -105,6 +106,7 @@ function SelectItem({ options, width }) {
             border-radius: 10px;
             cursor: pointer;
             width: 100%;
+            font-family: 'SF Pro Display';
             &:last-of-type {
               border-bottom: none;
             }

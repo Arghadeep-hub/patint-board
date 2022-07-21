@@ -13,10 +13,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <SSRProvider>
       <TopBar menuClicked={menuClicked} setMenuClicked={setMenuClicked} />
-      <div className='flexBody'>
-        <SideBar menuClicked={menuClicked} />
-        <Component menuClicked={menuClicked} {...pageProps} />
-      </div>
+      <SideBar menuClicked={menuClicked} />
+      <Component menuClicked={menuClicked} {...pageProps} />
     </SSRProvider>
   )
 }

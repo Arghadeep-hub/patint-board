@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
 import styled from 'styled-components'
-import { BottomMenu, SideBarCon, TopMenu } from './styledSidebar'
+import { BottomMenu, SideBarCon, TopMenu, NavText, FlexDisplay } from './styledSidebar'
 
 const menuTop = [
   {
@@ -41,23 +41,6 @@ const menuBottom = [
   },
 ]
 
-const FlexDisplay = styled.div`
-  cursor: pointer;
-  width: 100%;
-  display: flex;
-  justify-content: ${(props) => props.isClicked ? "flex-start" : "center"};
-  align-items: center;
-  background-color: ${(props) => props.isMatch ? "#DAEFFF" : "transparent"};
-  border-left:${(props) => props.isMatch ? "5px solid #76C3FF" : "0"};
-`;
-const NavText = styled.h6`
-  margin: 0;
-  text-transform: capitalize;
-  font-size: 18px;
-  font-weight: 600;
-  color: ${(props) => props.isMatch ? "#76C3FF" : "#616161"};
-  cursor: inherit;
-`;
 
 function SideBar({ menuClicked }) {
   const router = useRouter();
