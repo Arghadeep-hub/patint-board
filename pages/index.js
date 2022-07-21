@@ -62,7 +62,7 @@ function Home({ menuClicked }) {
           <div className='d-flex justify-content-center align-items-center'>
             <Indicator color='#9A9A9A'>AF Not Confirmed</Indicator>
             <label className="switch">
-              <input type="checkbox" checked />
+              <input type="checkbox" defaultChecked />
               <span className="slider"></span>
             </label>
             <Indicator color='#F45B5B'>AFIB</Indicator>

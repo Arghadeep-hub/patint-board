@@ -5,7 +5,7 @@ import styled from "styled-components";
 export const HomeDiv = styled.div`
   background-color: #f5f5f5;
   padding: 0 0.5rem 0 1rem;
-  width: 100vw;
+  width: ${(props) => `${100 - (props.width)}vw`};
   height: 90vh;
   position: relative;
   top: 10vh;
@@ -20,14 +20,16 @@ export const Small = styled.h6`
   margin: 0;
   text-align: center;
   font-family: 'SF Pro Display';
+  white-space: nowrap;
 `;
 export const Para = styled.p`
   margin: 0;
   text-transform: capitalize;
-  text-align: center;
+  text-align: start;
   font-size: ${(param) => param.fontSize ? `${param.fontSize}px` : "16px"};
   font-weight: ${(param) => param.fw ? param.fw : "400"};
   color: ${(param) => param.color};
+  white-space: nowrap;
   font-family: 'SF Pro Display';
 `;
 
