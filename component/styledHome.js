@@ -49,13 +49,14 @@ export const Indicator = styled.p`
 `
 export const Visible = styled(Button)`
   color: #fff;
-  padding: 0 10px;
+  padding: 0 1rem;
   background-color: #8085E9;
-  width: 200px;
+  width: 100%;
   height: 50px;
+  border-radius: 10px;
+  white-space: nowrap;
   text-transform: capitalize;
   box-shadow: 0px 20px 40px rgba(153, 153, 153, 0.1);
-  border-radius: 10px;
   font-family: 'SF Pro Display';
   &:focus, &:hover{
     box-shadow: 0px 20px 40px rgba(153, 153, 153, 0.1);
